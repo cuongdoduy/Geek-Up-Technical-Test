@@ -21,9 +21,9 @@ export class OrderDiscount {
   @JoinColumn({ name: 'discount_id' })
   discount: Discount;
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', nullable: true })
   updatedAt: Date;
 }

@@ -25,7 +25,7 @@ class OrderItem {
   quantity: number
 }
 
-export class ProductRequestDTO {
+export class OrderRequestDTO {
   @ApiProperty({ type: 'string' })
   customer_id: string
 

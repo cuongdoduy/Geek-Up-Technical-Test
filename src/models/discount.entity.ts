@@ -14,9 +14,9 @@ export class Discount {
   @Column({ type: 'enum', enum: ['Percent', 'Amount'] })
   type: 'Percent' | 'Amount';
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', nullable: true })
   updatedAt: Date;
 }

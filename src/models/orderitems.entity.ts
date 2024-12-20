@@ -30,7 +30,7 @@ export class OrderItem {
   @JoinColumn({ name: 'product_id' })
   product: Product;
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp',default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
   @Column({ type: 'timestamp', nullable: true })

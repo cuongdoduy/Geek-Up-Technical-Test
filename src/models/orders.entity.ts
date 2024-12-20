@@ -43,7 +43,7 @@ export class Order {
   @Column({ type: 'enum', enum: ['Company', 'PersonalHouse'] })
   housingType: 'Company' | 'PersonalHouse'
 
-  @Column({ type: 'timestamp' })
+  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date
 
   @Column({ type: 'timestamp', nullable: true })
