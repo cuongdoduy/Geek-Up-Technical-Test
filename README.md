@@ -1,6 +1,6 @@
 ## Description
 
-IELTS Platform API repository built with [Nest](https://github.com/nestjs/nest) Framework
+Ecommerce Platform API repository built with [Nest](https://github.com/nestjs/nest) Framework
 
 ## Tech Stacks
 
@@ -32,8 +32,8 @@ $ npm install
 
 ## Settting up the environment variables
 
-- Copy the file `.env.example` and make the new file `.env`
-- Insert the values for the variables in the `.env` file
+- Copy the file `.env.example` and make the new file `.env.development`
+- Insert the values for the variables in the `.env.development` file
 
 ## Running the app
 
